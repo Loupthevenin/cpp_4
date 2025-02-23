@@ -6,7 +6,7 @@
 /*   By: ltheveni <ltheveni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 18:13:24 by ltheveni          #+#    #+#             */
-/*   Updated: 2025/02/18 18:29:31 by ltheveni         ###   ########.fr       */
+/*   Updated: 2025/02/23 08:25:36 by ltheveni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ Brain &Brain::operator=(const Brain &other) {
   int i;
 
   if (this != &other) {
+    i = 0;
     while (i < 100) {
       ideas[i] = other.ideas[i];
       i++;
